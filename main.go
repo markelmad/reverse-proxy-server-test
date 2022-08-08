@@ -48,4 +48,10 @@ func main() {
 	})
 
 	http.ListenAndServe(":80", proxy)
+
+	//
+	t := TryMe{
+		name: "Test",
+	}
+	fmt.Println(t)
 }
