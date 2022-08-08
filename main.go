@@ -8,6 +8,10 @@ import (
 	"net/url"
 )
 
+type TryMe struct {
+	name string
+}
+
 func main() {
 	// remoteURL, err := url.Parse("http://192.168.31.50:8001")
 	localURL, err := url.Parse("http://192.168.31.50:8001")
