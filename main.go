@@ -50,8 +50,13 @@ func main() {
 	http.ListenAndServe(":80", proxy)
 
 	//
+	t := TryThisFunc()
+	fmt.Println(t)
+}
+
+func TryThisFunc() string {
 	t := TryMe{
 		name: "Test",
 	}
-	fmt.Println(t)
+	return t.name
 }
